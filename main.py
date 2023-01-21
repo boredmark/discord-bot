@@ -4,14 +4,10 @@ from discord.ext import commands
 import json
 import config
 
-
-
 token = config.token
-
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='/', intents=intents)
-
 client = discord.Client(intents=intents)
 
 class MyView(discord.ui.View):
